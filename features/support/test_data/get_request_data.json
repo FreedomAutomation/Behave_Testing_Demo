@@ -1,0 +1,29 @@
+{
+  "positive_test_cases":
+    {
+      "Valid User Registration": {
+      "request_body": {"q":"48.8567,2.3508"},
+      "expected_response": {
+        "location": {
+          "name": "Paris",
+          "region": "Ile-de-France",
+          "country": "France",
+          "lat": 48.86,
+          "lon": 2.35,
+          "tz_id": "Europe/Paris"
+          }
+        }
+      }
+    },
+
+  "negative_test_cases":     {
+      "Invalid Parameter": {
+      "request_body": {"coordinates":"48.8567,2.3508"},
+      "expected_response": {
+        "code": 1003,
+        "message": "Parameter q is missing."}
+        }
+      }
+    }
+
+
