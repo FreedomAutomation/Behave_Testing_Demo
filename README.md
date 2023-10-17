@@ -11,3 +11,4 @@ Example:
 4. Activate virtual environment:  `source venv/bin/activate`   (for windows it will be different)
 5. Install dependencies: `pip3 install -r requirements.txt`
 6. To Run Test just type  `behave features` and press enter
+7. Failed pull request
